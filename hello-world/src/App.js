@@ -4,6 +4,7 @@ import Greet from './components/Greet'
 import MyComponent from './components/Greet'
 import Welcome from './components/Welcome'
 import Hello from './components/Hallo'
+import Message from './components/Message'
 
 function App() {
   return (
@@ -11,8 +12,8 @@ function App() {
       {/* <Greet></Greet> */}
       {/* or <Greet/> */} 
 
-      {/* prop names - we can have any number of prop names */}
-      <Greet  name = "Bruce" heroName = "Batman">
+      {/* ******prop names - we can have any number of prop names****** */}
+      {/* <Greet  name = "Bruce" heroName = "Batman">
         
         <p> This is children props </p>
       
@@ -24,18 +25,20 @@ function App() {
       
       </Greet>
 
-      <Greet  name = "Diana" heroName = "Wonder women" /> 
+      <Greet  name = "Diana" heroName = "Wonder women" />  */}
 
-      {/* props using class components */}
+      {/* *****props using class components***** */}
 
-      <Welcome name = "Bruce" heroName = "Batman" />
+      {/* <Welcome name = "Bruce" heroName = "Batman" />
       <Welcome name = "Clark" heroName = "Superman"/>
-      <Welcome name = "Diana" heroName = "Wonder women"/>
+      <Welcome name = "Diana" heroName = "Wonder women"/> */}
 
       {/* <MyComponent/>
       <Welcome/> */}
 
       {/* <Hello/> */}
+
+      <Message/>
 
 
     </div>
