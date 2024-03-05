@@ -5,10 +5,12 @@ import MyComponent from './components/Greet'
 import Welcome from './components/Welcome'
 import Hello from './components/Hallo'
 import Message from './components/Message'
+import Counter from './components/Counter';
 
 function App() {
   return (
     <div className="App">
+      <Counter/>
       {/* <Greet></Greet> */}
       {/* or <Greet/> */} 
 
@@ -38,7 +40,7 @@ function App() {
 
       {/* <Hello/> */}
 
-      <Message/>
+      {/* <Message/> */}
 
 
     </div>
