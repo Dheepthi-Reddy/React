@@ -14,18 +14,34 @@ class Counter extends Component {
         // this.state.count = this.state.count + 1      
         // this will not increment in UI it will only increment in the console
 
-        this.setState({
+        // this.setState({
 
-            count: this.state.count + 1 
+        //     count: this.state.count + 1 
 
-        },
-        () => {
-            console.log("Callback value", this.state.count)
-        }
-        )
+        // },
+        // () => {
+        //     console.log("Callback value", this.state.count)
+        // }
+        // )
+
+        this.setState(prevState => ({
+        // this.setState((prevState, props) => ({
+            // count: prevState.count + props.addValue
+            count: prevState.count + 1
+        }))
         console.log(this.state.count)
     }
 
+
+    incrementFive(){
+
+        this.increment()
+        this.increment()
+        this.increment()
+        this.increment()
+        this.increment()
+        
+    }
     
   render() {
     return(
@@ -35,7 +51,7 @@ class Counter extends Component {
         Count - {this.state.count}
       </div>
 
-      <button onClick={() => this.increment()}> Increment </button>
+      <button onClick={() => this.incrementFive()}> Increment </button>
       
     </div>) 
   }
