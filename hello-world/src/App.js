@@ -6,11 +6,19 @@ import Welcome from './components/Welcome'
 import Hello from './components/Hallo'
 import Message from './components/Message'
 import Counter from './components/Counter';
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
 
 function App() {
   return (
     <div className="App">
-      <Counter/>
+
+      <FunctionClick/>
+
+      <ClassClick/>
+
+      {/* <Counter/> */}
+      
       {/* <Greet></Greet> */}
       {/* or <Greet/> */} 
 
