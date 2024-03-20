@@ -19,7 +19,7 @@ class EventBind extends Component {
       
     }
     
-    // Use this for Methods-1,2,3 of binding
+    // Use this method for Methods-1,2,3 of binding
     // clickHandler(){
 
     //     this.setState ({
